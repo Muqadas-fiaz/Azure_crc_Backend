@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "databaseAccounts_medishadb_name": {
+      "value": null
+    },
+    "storageAccounts_medisha_name": {
+      "value": null
+    },
+    "sites_medi_crc_function_name": {
+      "value": null
+    },
+    "serverfarms_ASP_medi_crc_function_a5d1_externalid": {
+      "value": null
+    }
+  }
+}
