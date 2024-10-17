@@ -28,7 +28,7 @@ jobs:
         echo "COSMOS_DB_ENDPOINT=${{ secrets.COSMOSDB_ENDPOINT  }}" >> $GITHUB_ENV
         echo "COSMOS_DB_KEY=${{ secrets.COSMOSDB_KEY }}" >> $GITHUB_ENV
 
-    - name: Run test
+    - name: Run tests
       env:
         COSMOSDB_ENDPOINT: ${{ secrets.COSMOSDB_ENDPOINT }}
         COSMOSDB_KEY: ${{ secrets.COSMOSDB_KEY }}
