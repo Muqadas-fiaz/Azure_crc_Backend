@@ -28,12 +28,12 @@ jobs:
         echo "COSMOS_DB_ENDPOINT=${{ secrets.COSMOSDB_ENDPOINT  }}" >> $GITHUB_ENV
         echo "COSMOS_DB_KEY=${{ secrets.COSMOSDB_KEY }}" >> $GITHUB_ENV
 
-    - name: Run tests
+    - name: Run test
       env:
         COSMOSDB_ENDPOINT: ${{ secrets.COSMOSDB_ENDPOINT }}
         COSMOSDB_KEY: ${{ secrets.COSMOSDB_KEY }}
       run: |
-        cd MyFunctions/tests
+        cd MyFunctions/test
         pytest
 
     - name: Azure Login
