@@ -43,4 +43,4 @@ jobs:
 
     - name: Deploy ARM Template
       run: |
-        az deployment group create --resource-group medisha-rg --template-file Infrastructure/merged_template.json --parameters Infrastructure/merged_parameters.json
+        az deployment group create --resource-group medisha-rg --template-file Infrastructure/merged_templates.json --parameters Infrastructure/merged_parameters.json
